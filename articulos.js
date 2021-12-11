@@ -9,7 +9,7 @@ export function LoadLista(){
             <h2>${juego.nombre}</h2>
             <p>${juego.descripcion}</p>
             <div>
-            <img src="/1-Juegos/resources/images/${juego.nombreFoto}" alt="${juego.nombreFoto}">            
+            <img src="./resources/images/${juego.nombreFoto}" alt="${juego.nombreFoto}">            
             </div>
             <ul>
                 <li><a href="https://www.playstation.com" target="blank">Ps4</a></li>
