@@ -1,0 +1,41 @@
+{
+    "lista":[
+        {
+            "id":1,
+            "nombre":"Elden Ring",
+            "descripcion":"Elden Ring es un próximo videojuego de rol de acción desarrollado por FromSoftware y publicado por Bandai Namco Entertainment. El juego es una colaboración entre el director del juego Hidetaka Miyazaki y el novelista de fantasía George R. R. Martin.",
+            "nombreFoto":"EldenRingPortada.png"
+
+        },
+        {
+            "id":2,
+            "nombre":"God of War Ragnarok",
+            "descripcion":"God of War: Ragnarök es un próximo juego de acción y aventuras en desarrollo por Santa Monica Studio y que será publicado por Sony Interactive Entertainment. Está previsto que se lance en 2022 para PlayStation 4 y PlayStation 5.",
+            "nombreFoto":"GOW5Portada.png"
+        },
+        {
+            "id":3,
+            "nombre":"Fortnite",
+            "descripcion":"Fortnite es un videojuego del año 2017 desarrollado por la empresa Epic Games, lanzado como diferentes paquetes de software que presentan diferentes modos de juego, pero que comparten el mismo motor de juego y mecánicas. Fue anunciado en los Spike Video Game Awards en 2011.",
+            "nombreFoto":"fortnitePortada.jpg"
+        },
+        {
+            "id":4,
+            "nombre":"DOOM",
+            "descripcion":"Doom es un videojuego de disparos en primera persona desarrollado por id Software y publicado por Bethesda Softworks. Es el cuarto título de la serie principal y la primera gran entrega desde Doom 3 en 2004.",
+            "nombreFoto":"doomPortada.jpg"
+        },
+        {
+            "id":5,
+            "nombre":"Marvel's Spider-Man Ps4",
+            "descripcion":"Marvel's Spider-Man es un videojuego de acción y aventura basado en el popular superhéroe hómonimo de la editorial Marvel Comics.​ Fue desarrollado por Insomniac Games y publicado por Sony Interactive Entertainment en exclusiva para la consola PlayStation 4.",
+            "nombreFoto":"spidermanps4Portada.jpg"
+        },
+        {
+            "id":5,
+            "nombre":"Marvel's Spider-Man Ps4",
+            "descripcion":"Marvel's Spider-Man es un videojuego de acción y aventura basado en el popular superhéroe hómonimo de la editorial Marvel Comics.​ Fue desarrollado por Insomniac Games y publicado por Sony Interactive Entertainment en exclusiva para la consola PlayStation 4.",
+            "nombreFoto":"spidermanps4Portada.jpg"
+        }
+    ]
+}

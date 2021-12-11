@@ -1,0 +1,148 @@
+*{
+    font-family: 'Lato', sans-serif;
+    --color1: rgb(63, 88, 88);
+}
+
+body{
+    margin: 0;
+    background-color: rgb(240, 235, 235);
+}
+
+
+header {
+    
+    background-color: var(--color1);
+    /* font-size: 2rem; */
+    height: 7rem;
+    
+    /* relativo al tamaño asignado en la etiqueta html
+       lo mas usado, ya que se adapta al dispo
+    */
+}
+header h1{
+    transition: all 0.4s ease;
+    margin: 0;
+    color: rgb(236, 236, 236);
+    padding: 2rem 3rem;
+    font-size: 2rem;
+
+}
+header h1:hover{
+    color: rgb(201, 140, 198);
+    
+    cursor: pointer;
+
+}
+#btnAdmin{
+    font-size: 1.2rem;
+    padding: .6rem;
+    transition: all 0.4s ease;
+    position: fixed;
+    right: .7rem;
+    top:2rem;
+    background-color:var(--color1) ;
+    border:none;
+    color: white;
+    z-index: 100;
+    border-radius: .7rem;
+    opacity: .5;
+    
+}
+#btnAdmin:hover{
+    color: rgb(201, 140, 198);
+    /* background-color: rgb(86, 119, 119); */
+    cursor: pointer;
+    opacity: 1;
+}
+
+#containerPrincipal{
+    display: block;
+    position: relative;
+    max-width: 80rem;
+    margin: 1rem auto;
+
+}
+section article{
+    transition: box-shadow 0.3s ease,outline ease-out .4s ;
+    display: inline-block;
+    /* position: relative; */
+    width: 400px;    
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    color: var(--color1);
+    margin: .6rem;
+   
+}
+section article:hover{
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0,0.3);
+    outline: rgba(201, 140, 198,.5) double 10px;
+}
+/* section article h2::selection{
+    background-color:rgb(63, 88, 88) ;
+    color: white;
+} */
+section article p::selection,section article h2::selection,section article img::selection,section article a::selection {
+    background-color:rgba(63, 88, 88, .6) ;
+    color: white;
+    
+}
+article div{
+    width: 400px;
+    height: 500px;
+    overflow: hidden;
+}
+article img{
+    width: 400px;
+     /* height: 500px;  */
+    margin-bottom: 1px;
+   
+}
+article p, article h2{
+    padding: 0.2rem 0.3rem;
+    margin: 0;
+}
+article ul{
+    margin: 0;
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+}
+article ul li{    
+    
+    padding: 0 0.4rem;
+}
+article ul li a{
+    text-decoration: none;
+    color: rgb(135, 165, 165);
+}
+
+article ul li a:hover{
+    color: rgb(201, 140, 198);
+}
+
+
+footer{
+    background-color:var(--color1) ;
+    color: white;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    padding: 2rem;
+}
+footer section{
+    float: right;
+    
+}
+footer p{
+    margin:0;
+}
+footer a{
+    transition: all 0.3s ease;
+    color: white;
+    text-decoration: none;
+}
+footer a:hover{
+    color: rgb(201, 140, 198);
+    
+}
+
