@@ -45,3 +45,33 @@ export function Enviar(){
     let imagen=document.getElementById("LinkImagen").value
     // axios.put()
 }
+
+
+export async function loadListaFetch(){
+    let p=""
+    try{
+        const list = await fetch("http://192.168.18.28:3000/lista")
+        const lista = await list.json()
+        console.log(lista)
+        lista.forEach(juego => {
+            console.log (juego)
+            p+=`<article>
+            <h2>${juego.nombre}</h2>
+            <p>${juego.descripcion}</p>
+            <div>
+            <img src="./resources/images/${juego.nombreFoto}" alt="${juego.nombreFoto}">            
+            </div>
+            <ul>
+                <li><a href="https://www.playstation.com" target="blank">Ps4</a></li>
+                <li><a href="">Pc</a></li>
+                <li><a href="https://www.xbox.com" target="blank">Xbox</a></li>
+            </ul>
+            </article>`
+        });
+        document.getElementById("containerPrincipal").innerHTML+= p
+    }
+    catch(error){
+        console.log(error)
+    }
+   
+}
