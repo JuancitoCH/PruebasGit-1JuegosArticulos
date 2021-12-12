@@ -68,11 +68,9 @@ export function crearArticulo(lista){
 export function crearSeccion(){
     const boton = document.getElementById('btnAdmin')
     const contenedor = document.getElementById("containerCrear")
-    
     //boton.value = boton.value ?? "1"
     if(!boton.value ?? "1")
     {
-       
         contenedor.innerHTML=`
         <div id="inputDinamico">
         <label for="">Nombre</label>
@@ -89,15 +87,15 @@ export function crearSeccion(){
         <button id="envioDatos"onclick="Enviar()" >Enviar</button>
         `
         boton.value = "1"
-        
+        contenedor.style.opacity=1        
         return ""
-        
     }
     if(boton.value)
     {
-        
         boton.value=''
-        contenedor.innerHTML=""
+        contenedor.style.opacity=0
+        // contenedor.clientHeight
+        setTimeout(()=>{contenedor.innerHTML=""},450)
     }
 }
 
@@ -107,4 +105,8 @@ export function Enviar(){
     const descripcion =document.getElementById("descripcionArticulo").value
     const imagen=document.getElementById("LinkImagen").value
     // axios.put()
+}
+
+export function esperar(segundos){
+    
 }
