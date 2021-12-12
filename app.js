@@ -1,5 +1,5 @@
 import ordenarPrueba from "./vectores.js"
-import {LoadLista,crearSeccion, Enviar,loadListaFetch} from "./articulos.js"
+import {crearSeccion, Enviar,loadListaFetch,crearArticulo} from "./articulos.js"
 window.onload = main
 
 function main(){

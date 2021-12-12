@@ -47,12 +47,36 @@ header h1:hover{
     border-radius: .7rem;
     opacity: .5;
     
+    
 }
 #btnAdmin:hover{
     color: rgb(201, 140, 198);
     /* background-color: rgb(86, 119, 119); */
     cursor: pointer;
     opacity: 1;
+    
+}
+#containerCrear{
+    margin: 1rem .6rem;
+    transition:opacity 3s ease;
+    
+}
+#containerCrear button{
+    margin: 1rem .6rem;
+    
+}
+#containerCrear button:hover{
+    cursor: pointer;
+
+}
+#inputDinamico {
+    display: block;
+    padding: .35rem 0;
+} 
+#inputDinamico input{
+    
+    position: absolute;
+    left: 1rem;
 }
 
 #containerPrincipal{
@@ -72,10 +96,12 @@ section article{
     cursor: pointer;
     color: var(--color1);
     margin: .6rem;
+    box-shadow: 0 .4rem .7rem rgba(0, 0, 0,0.2);
+    
    
 }
 section article:hover{
-    box-shadow: 0 1rem 1rem rgba(0, 0, 0,0.3);
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0,0.4);
     outline: rgba(201, 140, 198,.5) double 10px;
 }
 /* section article h2::selection{
@@ -109,7 +135,6 @@ article ul{
     padding-left: 0;
 }
 article ul li{    
-    
     padding: 0 0.4rem;
 }
 article ul li a{
