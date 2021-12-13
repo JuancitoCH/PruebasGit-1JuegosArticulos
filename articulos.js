@@ -2,10 +2,12 @@
 export async function loadListaFetch(){
     try{
         const list = await fetch("http://192.168.18.28:3000/lista")
+        //const list = await fetch("http://localhost:3000/",{mode:'no-cors'})
+        //console.log(list)
         if(list.ok){
             console.log("Succes")
             const lista = await list.json()
-            crearArticulo(lista)            
+            return crearArticulo(lista)            
         }
         if(!list.ok) return console.log("Error fatal xD No se encontro la direcion que se deseaba")
        
